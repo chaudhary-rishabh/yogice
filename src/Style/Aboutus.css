@@ -1,0 +1,202 @@
+.aboutus-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.aboutus-sub1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(171, 197, 250);
+  width: 70vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -4;
+}
+.aboutus-gif{
+  border-radius: 30px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+.btn-aboutus, .btn-aboutus-clicked{
+  background-color: white;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: bold;
+}
+.btn-aboutus:hover{
+  background-color: aliceblue;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.btn-aboutus-clicked{
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.aboutus-main-box {
+  width: 89vw;
+  height: 98vh;
+  border-radius: 85px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 2;
+  top: 50%; /* Position it at the vertical center */
+  left: 50%; /* Position it at the horizontal center */
+  transform: translate(-50%, -50%); /* Center it */
+  background-color: rgba(255, 255, 255, 1);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.height-aboutus1{
+  height: 250px;
+  width: auto ;
+}
+
+.aboutus-main-box-sub{
+  /* position: relative;
+  z-index: 10; */
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutus-btn-container{
+  height: 40%;
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus-img-container{
+  width: 60vw;
+}
+.aboutus-content{
+  height: 60%;
+  /* width: 99%; */
+  /* margin: 50px; */
+}
+
+.aboutus-txt1{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  display: none;
+  margin: 20px;
+}
+.txtdisplay{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin: 20px;
+  display: table;
+}
+
+
+/* employee */
+.employee-main{
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.employee-box{
+  height: 300px;
+  width: 250px;
+  font-family: 'Source Serif 4', sans-serif;
+  border-radius: 20px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.employee-img{
+  width: 200px;
+  border-radius: 20px;
+  height: 250px;
+}
+
+@media (max-width: 1200px) {
+  .aboutus-txt1{
+    font-size: 16px;
+  }
+  .aboutus-main-box-sub{
+    width: 70vw;
+  }
+}
+@media (max-width: 900px) {
+  .aboutus-txt1{
+    font-size: 15px;
+  }
+  .aboutus-main-box-sub{
+    width: 80vw;
+  }
+}
+@media (max-width: 700px) {
+  .aboutus-txt1{
+    font-size: 14px;
+  }
+  .aboutus-main-box-sub{
+    width: 85vw;
+  }
+  .aboutus-main-box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .aboutus-txt1{
+    font-size: 14px;
+  }
+  .aboutus-main-box{
+    height: 90vh;
+    width: 92vw;
+  }
+  .aboutus-sub1 {
+    width: 80vw;
+  }
+  .aboutus-main-box-sub{
+    padding: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .aboutus-txt1{
+    font-size: 12px;
+  }
+  .aboutus-main-box-sub{
+    padding: 40px;
+  }
+  .aboutus-btn-container{
+    height: 40%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .aboutus-sub1 {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 350px) {
+  .aboutus-txt1{
+    font-size: 11px;
+  }
+  .aboutus-main-box-sub{
+    padding: 30px;
+  }
+}

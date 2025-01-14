@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flip-box {
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%; 
+  height: 50vh; 
+  /* perspective: 1000px; */
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back, .img-change-first, .img-change-second, .img-change-third, .img-change-fourth, .img-change-fifth, .img-change-sixth  {
+  position: absolute;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  width: 100%;
+  height: 40vh;
+  background-image: url('../Images/frienupprojectappance.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: white;
+  color: black;
+}
+
+.flip-box-back {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 5px 10px 20px rgba(26, 64, 113, 255);
+}
+.img-change-first{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/frienupprojectappance.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(26, 64, 113, 0.2);
+}
+.img-change-second{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/electronicecommerce.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.2);
+}
+.img-change-third{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/bookerizeappance.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(26, 64, 113, 0.2);
+}
+.img-change-fourth{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/aackgymproject.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(26, 64, 113, 0.2);
+}
+.img-change-fifth{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/laundryappance.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(26, 64, 113, 0.2);
+}
+.img-change-sixth{
+    width: 100%;
+    height: 80%;
+    background-image: url('../Images/travellingappance.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 20px rgba(26, 64, 113, 0.2);
+}
+.box-projects-main{
+  margin-top: 3%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-projects-main {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
+.project-card-main{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card-main{
+    height: 38vh;
+    width: 22vw;
+    margin: 40px;
+}
+
+
+
+.empty-main{
+  height: 20vh;
+}
+
+.project-txt1{
+  font-family: 'Domine', serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: blue;
+}
+.project-txt2{
+  font-family: 'Stardos Stencil', sans-serif;
+}
+
+.portfolio-main{
+  margin: auto;
+  height: 60vh;
+  box-shadow: 2px 5px 20px rgba(135, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(79, 126, 219);
+  text-align: center;
+}
+.portofolio-sub-main{
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-txt3 {
+  /* margin: 20px; */
+  font-family: 'EB Garamond', sans-serif;
+  color: #202020;
+  text-transform: uppercase;
+}
+
+.projects-txt3 {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 45px;
+  line-height: 50px;
+  color: #f1ebe5;
+  text-shadow: 0 13.36px 8.896px #7984fa,0 -2px 1px #fff;
+  letter-spacing: 1px;
+}
+
+.portfolio-sub{
+  width: 35%;
+  height: 85%;
+}
+.portfolio-video1{
+  height: 100%;
+  /* width: 100%; */
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  /* .project-card-main{
+    height: 80vh;
+  } */
+  /* .card-main{
+    height: 6vh;
+    width: 29%;
+    margin-bottom: 300px;
+  } */
+  .portfolio-sub{
+    width:  80%;
+    height: 58%;
+  }
+  .portfolio-video1{
+    height: 65%;
+  }
+  .project-txt1{
+    font-size: 24px;
+  }
+  .project-txt2{
+    font-size: 18px;
+  }
+  .projects-txt3 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #7984fa,0 -2px 1px #fff;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 600px) {
+ 
+  .card-main{
+    height: 6vh;
+    width: 32vw;
+    margin-bottom: 240px;
+  }
+  .project-card-main{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .portofolio-sub-main{
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .portfolio-sub{
+    height: 61%;
+  }
+
+}
+@media (max-width: 468px) {
+  .card-main{
+    height: 12vh;
+    width: 42vw;
+    margin: 60px 10px 100px 10px;
+  }
+  .project-card-main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  } 
+  .flip-box {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%; 
+    height: 38vh; 
+    /* perspective: 1000px; */
+  }
+  .projects-txt3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #7984fa,0 -2px 1px #fff;
+    letter-spacing: 1px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .flip-box {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%; 
+    height: 35vh; 
+    /* perspective: 1000px; */
+  }
+  .card-main{
+    height: 8vh;
+    width: 44vw;
+    margin: 2px 10px 100px 10px;
+  }
+   .marketingprojects-sub1{
+    width: 70%;
+    height: 15vh;
+  }
+}
+@media (max-width: 340px) {
+  .flip-box {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%; 
+    height: 35vh; 
+    /* perspective: 1000px; */
+  }
+  .card-main{
+    height: 5vh;
+    width: 40vw;
+    margin: -50px 10px 10px 10px;
+  }
+  .project-card-main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  } 
+   .project-txt1{
+    font-size: 20px;
+  }
+  .project-txt2{
+    font-size: 16px;
+  }
+  .projects-txt3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #7984fa,0 -2px 1px #fff;
+    letter-spacing: 1px;
+  }
+  .portfolio-sub{
+    height: 56%;
+  }
+}
