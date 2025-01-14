@@ -1,0 +1,114 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  background-color: #74de51;
+  /* background-color: #fbc606; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px;
+}
+
+/* Logo container styles */
+.logo-container {
+  flex: 1;
+}
+
+/* Header logo styles */
+.logo-header {
+  max-width: 70px;
+}
+
+.header-txt1{
+  font-family: 'Playfair Display', sans-serif;
+}
+/* Menu styles */
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: 20%;
+  font-size: large;
+  font-weight: bolder;
+}
+
+/* Menu link styles */
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 0px 1px rgb(0, 0, 0);
+  position: relative;
+  transition: color 0.3s ease-in;
+}
+
+/* Underline effect styles for both hover and active */
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in, border-bottom 0.3s ease-in;
+}
+
+/* Hover effect */
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Active link styles */
+.menu a.active {
+  color: #ffffff;
+  text-shadow: 1px 0px 1px rgb(0, 0, 0);
+}
+
+/* Active link's underline effect styles */
+.menu a.active::after {
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Burger icon styles */
+.burger-icon {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  /* Show burger icon on small screens */
+  .burger-icon {
+    display: block;
+  }
+
+  /* Hide menu by default and show it when burger icon is clicked */
+  .menu {
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #74de51;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show menu when it has "open" class */
+  .menu.open {
+    display: flex;
+  }
+}

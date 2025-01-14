@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* AboutUs.css */
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: #f5f5f5;
+    padding: 5%;
+}
+
+.about-us-content {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+    height: 100%;
+}
+
+.about-us-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.about-us-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555555;
+}
+
+
+.txt-responsive-big{
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+/* Add responsive styles here */
+@media (max-width: 1200px) {
+  .txt-first-aboutus{
+    line-height: 18px;
+    font-size: 15px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .about-us-content {
+        padding: 20px;
+    }
+}
+
+
+/* Initial styles for horizontal headers */
+.horizontal-headers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-headers h2 {
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Active header style */
+.horizontal-headers .active {
+  background-color: rgb(62, 228, 62);
+  color: #fff;
+}
+
+/* Style for visible sections */
+.section-container {
+  display: block;
+  margin: 5rem 0;
+  
+  line-height: 26px;
+}
+
+.txt-aboutus{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .txt-aboutus{
+    font-weight: 400;
+    font-size: 12px !important;
+    text-align: left;
+    line-height: 18px;
+  }
+  .txt-first-aboutus{
+    line-height: 15px;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 415px) {
+  .txt-responsive-big{
+    font-size: 10px;
+  }
+  .txt-first-aboutus{
+    line-height: 12px;
+    font-size: 10px !important;
+  }
+}
+

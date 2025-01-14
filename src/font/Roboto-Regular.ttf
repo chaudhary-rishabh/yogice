@@ -1,0 +1,10 @@
+/* src/fonts.css */
+
+@font-face {
+    font-family: 'Roboto';
+    /* Font name */
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    /* Corrected path */
+    font-weight: normal;
+    font-style: normal;
+}

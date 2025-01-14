@@ -1,0 +1,935 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* home component main container */
+.home-main-container {
+  /* margin:50px; */
+}
+
+/* top boxes home page */
+.home-top-container {
+  width: 90vw;
+  height: 17vh;
+  margin: auto;
+  margin-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.home-top-box {
+  min-width: auto;
+  margin:10px;
+  height: 105%;
+  border-radius: 20%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 8px 40px rgba(0, 0, 0, 0.12);
+}
+.home-top-box:hover {
+  box-shadow: 1px 1px 8px black;
+}
+.home-top-box-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.box-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.5s ease-in;
+}
+
+.home-top-box:hover .box-content {
+  opacity: 1;
+  /* Show content on hover */
+}
+
+/* Animation for the juice filling effect */
+.home-top-box::before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: orange;
+  /* Change this to the juice color */
+  transition: height 0.6s ease-in;
+  border-radius: 20%;
+}
+/* for animation different colours */
+.home-top-box.box1::before {
+  background-color: rgb(237, 177, 25);
+}
+
+.home-top-box.box2::before {
+  background-color: rgb(120, 12, 61);
+}
+
+.home-top-box.box3::before {
+  background-color: rgb(18, 109, 18);
+}
+
+.home-top-box.box4::before {
+  background-color: rgb(221, 237, 49);
+}
+
+.home-top-box.box5::before {
+  background-color: rgb(208, 243, 208);
+}
+
+.home-top-box.box6::before {
+  background-color: rgb(210, 66, 184);
+}
+
+.home-top-box:hover::before {
+  height: 100%;
+  /* Filling animation on hover */
+}
+
+/* Reset the animation and content when not hovered */
+.home-top-box:not(:hover)::before {
+  height: 0;
+}
+
+/* Additional styling for the button  */
+/* .box-content {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
+.btn-top-box {
+  background-color: #fff;
+  box-shadow: 1px 0px 5px white;
+  outline: none;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.btn-top-box:hover {
+  box-shadow: 2px 1px 8px white;
+  cursor: pointer;
+}
+.image-bottom-box {
+  margin-top: -30px;
+  width: 160px;
+  cursor: pointer;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+/* home first component */
+.home-first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("../images/yogice_main_1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 50vw;
+  height: 65vh;
+}
+
+.home-first-left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-first-img-container {
+  width: 42vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-first-img {
+  box-shadow: 2px 1px 12px black;
+  width: 90%;
+  border-radius: 40%;
+}
+.home-first-box {
+  padding: 20px;
+  width: 40vw;
+  height: 30vh;
+  border-radius: 20px;
+  box-shadow: 2px 1px 10px orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-first-btn {
+  width: 10vw;
+  height: 10vh;
+  background-color: orange;
+  border: none;
+  box-shadow: 1px 0px 5px black;
+  text-align: center;
+  border-radius: 30px;
+  margin: 10px;
+}
+.home-first-btn:hover {
+  box-shadow: 1px 1px 10px rgb(4, 4, 4);
+  cursor: pointer;
+}
+
+/* home slider second component */
+.home-second {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("../images/yogice_main_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 50vw;
+  height: 65vh;
+}
+.home-second-img-container {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+}
+.home-second-img {
+  width: 100%;
+  height: auto;
+  border-radius: 30%;
+}
+
+/* home slider third component  */
+.home-third {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("../images/yogice_main3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 50vw;
+  height: 65vh;
+}
+
+/* slider for juice section slider home page */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  /* Adjust the width as needed */
+}
+
+.active {
+  opacity: 1;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* home fitness */
+.home-fitness {
+  margin: 3% auto;
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-fitness-second {
+  margin-left: -150px;
+  /* width: 45%; */
+  /* height: 70%; */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center; /* Vertically center the green tick */
+  margin-bottom: 10px; /* Add margin between list items */
+}
+
+.green-tick {
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px; /* Add spacing between green tick and text */
+  font-size: 24px; /* Adjust the font size of the green tick as needed */
+}
+
+.business-description {
+  font-size: 16px; /* Adjust the font size of the description as needed */
+}
+
+/* //home buttons below main container */
+/* HomeLinkButton.css */
+
+.home-link-button-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+  
+}
+
+.home-link-button-box {
+  width: 10%;
+  padding: 5px;
+  height: 10vh;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 8px 40px rgba(0, 0, 0, 0.12);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: rgb(85, 332, 84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.5s;
+}
+
+.home-link-button-box.hovered {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: rotateY(180deg);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.16),
+    0px 16px 80px rgba(0, 0, 0, 0.24);
+}
+
+.button-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* slider of juice, shake , smothies, veg juice */
+/* MainContainer.css */
+.main-container {
+  border-radius: 0px 0px 30% 30%;
+  background-color: grey;
+  margin: 4% auto;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 105vh;
+  width: 40vw;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 1px 10px black;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.slideshow-container {
+  width: 60vw;
+  height: 50vw;
+  /* Half inside and half outside */
+  margin-top: -20vw;
+  /* Half of the height to overlap */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* animation: fadeInOut 5s infinite alternate; */
+  /* Animation for fading in and out */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.green-design {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 1%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  /* ... your other styles ... */
+}
+
+/* reviews */
+.review-main::-webkit-scrollbar {
+  width: 12px; 
+  cursor: pointer;
+  border-radius: 6px; 
+}
+
+.review-main::-webkit-scrollbar-thumb {
+  background-color: #74de51; 
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.review-main::-webkit-scrollbar-thumb:hover {
+  background-color: #74de51;
+  cursor: pointer !important;
+}
+
+.review-main {
+  margin: auto;
+  overflow: auto;
+  width: 90vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff !important;
+}
+.review-sub-main {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  width: auto;
+  background-color: #fff !important;
+}
+.review-child {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 8px 40px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  border-radius: 20px;
+  min-width: 300px;
+  background-color: #fff !important;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* gif */
+.gif {
+  margin: auto;
+  width: 40vw;
+  height: 70vh;
+  background-image: url("../images/yogice_gif.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 60px;
+}
+
+/* FAQPopup.css */
+.faq-popup {
+  text-align: center;
+  margin: 20px;
+}
+
+.open-popup-button {
+  color: #74de51;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 8px 40px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.open-popup-button:hover{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 2px 5px rgba(0, 0, 0, 0.09),
+    0px 8px 42px rgba(0, 0, 0, 0.12);
+}
+.question-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding:10px;
+  border-radius: 20px 20px 0px 0px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+  border-bottom: none;
+  height: 4vh;
+}
+.answer-box{
+  display: flex !important;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3)  ;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  border-radius: 0px 0px 20px 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 5vh;
+  border-top: none;
+}
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  border: 3px solid #74de51;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 70vw;
+  height: 90vh;
+  overflow-y: auto;
+  margin: auto;
+  overflow: hidden;  
+}
+
+.popup-inside-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.close-popup-button {
+  background-color: #74de51;
+  box-shadow: 0px 1px 2px black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* hr home */
+.hr-home {
+  border-top: 3px solid black;
+  box-shadow: 2px 2px 10px #74de51;
+  margin: 5%;
+}
+
+/* home smoothies */
+.home-smoothies-main,
+.home-juice-main,
+.home-shake-main {
+  width: 70vw;
+  height: 30vh;
+  margin: auto;
+}
+.daj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dajf {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.juice-btn-main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.smoothie-box,
+.juice-box,
+.shake-box {
+  width: 15vw;
+  height: 25vh;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 0px 10px black;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.smoothie-box1{
+  background-image: url("../images/yogice_home_smoothie1.jpeg");
+  background-size: cover;
+}
+.smoothie-box2{
+  background-image: url("../images/yogice_home_smoothie2.jpeg");
+  background-size: cover;
+}
+.smoothie-box3{
+  background-image: url("../images/yogice_home_smoothie3.jpeg");
+  background-size: cover;
+}
+.smoothie-box4{
+  background-image: url("../images/yogice_home_smoothie4.jpeg");
+  background-size: cover;
+}
+
+.juice-box1{
+  background-image: url("../images/yogicecarrot2.jpeg");
+  background-size: cover;
+}
+.juice-box2{
+  background-image: url("../images/yogicespniach.jpeg");
+  background-size: cover;
+}
+.juice-box3{
+  background-image: url("../images/yogicegrape2.jpeg");
+  background-size: cover;
+}
+.juice-box4{
+  background-image: url("../images/yogicepineapple2.jpeg");
+  background-size: cover;
+}
+
+.shake-box1{
+  background-image: url("../images/yogice_homeshake3.jpeg");
+  background-size: cover;
+}
+
+.shake-box2{
+  background-image: url("../images/yogice_homeshake2.jpeg");
+  background-size: cover;
+}
+
+.shake-box3{
+  background-image: url("../images/yogiceorange2.jpeg");
+  background-size: cover;
+}
+
+.shake-box4{
+  background-image: url("../images/yogicemango2.jpeg");
+  background-size: cover;
+}
+
+.home-juices-box-btn{
+  width: 5vw;
+  height: 4vh;
+  margin: 2px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home-juices-box-btn:hover{
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.9);
+  color:#74de51;
+}
+
+/* media for smaller screens */
+@media (max-width: 1100px) {
+  .question-box{
+    font-size: 12px;
+  }
+  .answer-box{
+    font-size: 12px;
+  }
+  .popup-inside-box{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* faq */
+  .question-box{
+    font-size: 10px;
+  }
+  .answer-box{
+    font-size: 10px;
+  }
+  .faq-header-txt{
+    font-size: 18px;
+  } 
+  .popup-box {
+    height: 100vh;
+    max-width: 90%;
+  }
+
+
+
+  .home-top-container{
+    height: 10vh;
+  }
+
+
+
+
+  .home-top-box {
+    width: 100%;
+    min-width: 60px;
+    margin: 1%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .image-bottom-box {
+    font-size: 8px;
+  }
+  .btn-top-box{
+    font-size: 10px !important;
+  }
+  .txt-responsive{
+    font-size: 10px;
+  }
+  .txt-responsive-big{
+    font-size: 14px;
+  }
+
+  .home-first{
+    width: 75vw;
+    height: 60vh;
+  }
+  .home-second{
+    width: 75vw;
+    height: 60vh;
+  }
+  .home-third{
+    width: 75vw;
+    height: 60vh;
+  }
+
+  .home-link-button-box{
+    width: 20vw;
+    font-size: 0.8rem;
+  }
+
+
+  .home-smoothies-main,
+  .home-juice-main,
+  .home-shake-main {
+    width: 80vw;
+  }
+
+  .smoothie-box,
+  .juice-box,
+  .shake-box{
+    width: 25%;
+    height: 70%;
+  }
+
+  .green-tick{
+    font-size: 12px;
+  }
+
+  .home-fitness-second{
+    margin-left: -40px;
+    height: 50vh;
+  }
+
+  .home-fitness-first{
+    width: 100%;
+    background-size: contain;
+  }
+
+  .main-container{
+    height: 35vh;
+    width: 30vw;
+  }
+  .slideshow-container{
+    height: 70vh;
+    width: 70vw;
+    margin-top: 5vh;
+  }
+
+  .gif{
+    width: 70vw;
+    height: 60vh;
+  }
+
+  .smoothie-box4{
+    display: none;
+  }
+  .shake-box4{
+    display: none;
+  }
+  .juice-box4{
+    display: none;
+  }
+
+  .smoothie-box,
+  .juice-box,
+  .shake-box{
+    width: 30%;
+    height: 70%;
+  }
+
+}
+
+@media (max-width: 558px) {
+  .last-review{
+    display: none;
+  }
+  
+  .smoothie-box3{
+    display: none;
+  }
+  .shake-box3{
+    display: none;
+  }
+  .juice-box3{
+    display: none;
+  }
+
+    .smoothie-box,
+  .juice-box,
+  .shake-box{
+    width: 45%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 438px) {
+
+  .smoothie-box,
+  .juice-box,
+  .shake-box{
+    width: 45%;
+    height: 70%;
+  }
+
+
+  .box6{
+    display: none;
+  }
+
+  .home-first{
+    width: 80vw;
+    height: 50vh;
+  }
+  .home-second{
+    width: 80vw;
+    height: 50vh;
+  }
+  .home-third{
+    width: 80vw;
+    height: 50vh;
+  }
+
+   .main-container{
+    height: 35vh;
+    width: 45vw;
+  }
+
+  .review-child{
+    margin: 5px;
+    padding: 5px;
+  }
+}

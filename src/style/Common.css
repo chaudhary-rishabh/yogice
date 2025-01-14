@@ -1,0 +1,168 @@
+.error-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.error-txt-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+.error-txt{
+    font-size: 30em;
+    font-weight: 900;
+    color: rgba(0,0,0,0.6);
+}
+.cart-noitem-main{
+    margin: 15vh 5vw;
+}
+.cart-txt{
+    font-size: 6rem;
+    font-weight: 900;
+    font-family: 'Source Serif 4', sans-serif;
+    color: rgba(0,0,0,0.7);
+}
+.cart-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    width: 80vw;
+}
+.cart-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25vh;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid rgba(84, 232, 151, 0.4);
+    box-shadow: 1px 0px 6px rgba(54, 207, 33, 0.4);
+    border-radius: 20px;
+}
+.cart-btn{
+    border-radius: 20px;
+    border:none;
+    box-shadow: 1px 0px 10px rgba(54, 207, 33, 0.4);
+    background-color: #fff;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin-left: 3%;
+}
+.cart-btn:hover{
+    box-shadow: 1px 1px 10px rgba(54, 207, 33, 0.8);
+    cursor: pointer;
+}
+.cart-img{
+    border-radius: 20px;
+}
+.cart-next-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    width: 50vw;
+    height: 20vh;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.fitness-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fitness-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fitness-box {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius:40px;
+    border-bottom: 5px solid green;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    height: 42vh;
+    font-weight: 400;
+    width: 42%;
+    margin: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(4, 102, 4);
+}
+
+.fitness-img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -360px;
+}
+
+@media (max-width: 1250px) {
+    .txt-responsive2{
+        font-size: 12px;
+    }
+}
+.font-family1{
+    font-family: 'Source Serif 4', sans-serif;
+}
+.font-family2{
+    font-family: 'Stardos Stencil', sans-serif;
+}
+.font-family3{
+    font-family: 'Domine', serif;
+}
+.font-family4{
+    font-family: 'Playfair Display', sans-serif;
+}
+.font-family5{
+    font-family: 'EB Garamond', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .txt-responsive{
+        font-size: 10px;
+    }
+    .txt-responsive2{
+        font-size: 10px;
+    }
+    .txt-responsive-big{
+        font-size: 14px;
+    }
+    .cart-txt{
+        font-size:52px;
+        
+    }
+    .responsive-display-none{
+        display:none;
+    }
+    .buttons-container-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column  ;
+    }
+    .cart-btn{
+        padding: 10px;
+        margin: 10px;
+    }
+    .none-display{
+        display: none;
+    }
+    .fitness-box{
+        height: 48vh;
+        margin: 10px;
+    }
+}

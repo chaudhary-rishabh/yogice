@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.juice-header {
+  width: 90vw;
+  height: 7vh;
+  margin: auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.juice-search-container {
+  outline: none;
+  border: none;
+  width: 20vw;
+  height: 4vh;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 0px 3px black;
+  margin-right: 8px; /* Add spacing between input and icon */
+}
+
+.juice-input {
+  outline: none;
+  border: none;
+  font-weight: 500;
+}
+
+.daj {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-icon {
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.input-filter {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.juicenot-founc-txt{
+  font-family: 'Source Serif 4', sans-serif;
+}
+.juicenotfound{
+  border-radius: 80px;
+  width: 80vw;
+  height: 500px;
+}
+.juice-card-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80vw;
+  margin: 40px auto 20px;
+}
+
+.card {
+  width: 18vw !important;
+  border-radius: 10px;
+  height: 33vh;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  /* Fixed image size */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #a9a1a1;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-image {
+  flex: 1; /* Take up available space */
+  height: 100%;
+  background-image: url("../images/yogice_shake2.jpeg");
+}
+
+.card-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-details {
+  transform: translateY(0);
+}
+
+.card-item-name {
+  margin-top: 81%;
+  height: 50px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.juice-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+/* Add these styles to reset link styles within the card */
+.card .juice-link {
+  color: inherit;
+}
+
+/* Add this rule to remove the outline on link hover */
+.juice-link:hover {
+  outline: none;
+}
+
+.customize-juice-main{
+  margin-left: 25px;
+  font-size: 1.1rem;
+  width: 15rem;
+  height: 2rem;
+  box-shadow: 1px 2px 12px rgba(93, 231, 81, 0.5);
+  border-radius: 20px;
+}
+
+.customize-juice-main:hover{
+  cursor: pointer;
+  box-shadow: 2px 3px 12px rgba(55, 229, 39, 0.6);
+}
+
+
+/* juice details css */
+.juice-details{
+  background-color: #fff;
+  width: 90vw;
+  height: 160vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  padding: 5rem;
+}
+
+.juice-details-img{
+  height: auto;
+  width: 40vw;
+  border-radius: 100px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+
+.juice-details-info{
+  font-family: "Roboto", sans-serif;
+}
+
+.juice-details-btn{
+  background-color: #74de51;
+  box-shadow: 1px 0px 10px rgba(0,0,0,0.6);
+  text-align: center;
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1.5em;
+  border: none;
+  border-radius: 30px;
+  margin: 25px;
+  box-sizing: border-box;
+}
+
+.order-btn-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.juice-details-btn:hover{
+  box-shadow: 1px 0px 12px rgba(0, 0, 0, 0.8);
+  background-color: #74de51;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.juice-notfound{
+  font-size: 10em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 900;
+}
+
+.juice-details-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid #000; /* Add borders to the table */
+  margin: 2rem;
+}
+
+.juice-details-table th,
+.juice-details-table td {
+  border: 3px solid #000; /* Add borders to table cells */
+  padding: 8px;
+  text-align: left;
+}
+
+/* Add additional styles as needed for your design */
+
+
+@media (max-width: 1200px) {
+  
+  .category-label{
+    font-size: 12px;
+  }
+  .juice-card-main {
+    width: 98vw;
+  }
+
+  .card {
+    width:22vw !important;
+    border-radius: 5px;
+    height: 35vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  
+.juice-details-table {
+  margin: auto;
+}
+
+  .juice-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1vh;
+  }
+
+  .juice-details-img{
+    width: 48vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .juice-details-img{
+    width: 70vw;
+  }
+
+  .category-label{
+    font-size: 10px;
+  }
+
+    .customize-juice-main{
+    width: 20vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .juice-input{
+    font-size: 12px;
+    width: 10vw;
+  }
+
+  .juice-card-main {
+    width: 98vw;
+  }
+
+  .card {
+    width:28vw !important;
+    border-radius: 5px;
+    height: 30vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card-item-name {
+    margin-top: 80%;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .juice-details-img{
+    width: 78vw;
+  }
+
+  .card {
+    width:27vw !important;
+    border-radius: 5px;
+    height: 25vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card-item-name {
+    margin-top: 90%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+  .juice-details-img{
+    width: 85vw;
+  }
+
+  .category-label{
+    font-size: 8px;
+  }
+  .input-filter {
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .juice-header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .juice-input{
+    font-size: 12px;
+    width: 20vw;
+  }
+
+  .customize-juice-main{
+    width: 30vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .juice-search-container {
+    width: 40vw;
+  }
+
+   .card {
+    width:38vw !important;
+    border-radius: 5px;
+    height: 24vh;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card-item-name {
+    margin-top: 72%;
+  }
+
+  
+  .juice-details-btn{
+    padding: 10px;
+    font-weight: 400;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  
+.juice-details-btn{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+  .juice-details-img{
+    width: 90vw;
+  }
+
+  .card {
+    width:42vw !important;
+    border-radius: 5px;
+    height: 24vh;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .card {
+    width:42vw !important;
+    border-radius: 5px;
+    height: 22vh;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+for now just make frontend web application with all the juice, yoga/fitness plan and juice images with a contactus form 
+also add juice orders with emailjs and add it to the page they can order now just without backend using emailjs
+vegetable juice, fruit juice, shakes, smoothies
+online fitness plan / online yoga plan
+
+for charges create category order now, subscribe only with juice, subscribe juice + online class. and give different discount
+based on their preference if they go for one year plan give big discount upto 10% if they go for month give 5% discount etc.
+
+once in every week give them a bowl of fruits with juice conduct seminars, competitions, and meetups  
+
+on home main landing screen add 3 images that will change on 3 second transition/ or a nice slider bootstrap or anyother
+on home page add three section juice, shake, smoothies. here onclick it will redirect it to juice page, shake page, smoothies page respectively
+on fitness page add exercise, yoga, running, walking etc.
+on about us page all information of businesss and necessity of juice how we came up with idea of yogice and juice delivery why juice is important to everyon etc.
+on contactus form add a form with name, number, and query.
+also make a FAQ section for normal questions and answers thank you
+add a cart on header
+
+there will be four headers fitness | Shake | Juice | aboutus | contactUs and home on main logo
+
+add a review section on home page add 3-5 reviews of people initially later will connect to backend and get people's review directly
+
+tie up with local gym, park, fitness center initially and also make templates or cards for advertisment
+
+Use glass bottles: Highlight the eco-friendly aspect of using glass bottles, as they're more sustainable than plastic.
+
+Develop a brand story: Create a narrative that connects customers emotionally with your product and its benefits.
+
+also do apply to home screen shortcut functionality
+
+subscribe per year, monthly, daily, customize daily with given number from website and payment online if ordered from website
